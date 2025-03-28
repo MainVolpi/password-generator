@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss"></style>
 </head>
 
-<body>
+<body class="mx-auto w-96">
+    <h1 class="text-3xl text-center font-bold">Password-Generator</h1>
+    <form action="form" id="form" class="mt-6">
+        <div class="flex itens-center flex-col w-full">
+            <label for="length">Quantos caracteres vai ter a senha?</label>
+            <input class="border-2 border-solid mt-4" type="number" id="length">
+        </div>
+        <div class="mt-6">
+            <p>Oque voce deseja? </p>
+            <label class="container mt-4">Letra maiuscula
+                <input type="checkbox" checked="checked" class="opcao">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Letra minuscula
+                <input type="checkbox" class="opcao">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Numero
+                <input type="checkbox" class="opcao">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Caracter especial
+                <input type="checkbox" class="opcao">
+                <span class="checkmark"></span>
+            </label>
 
-
+        </div>
+        <button id="bt">Confirmar</button>
+    </form>
     <script src="main.js"></script>
 </body>
 
